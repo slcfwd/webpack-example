@@ -1,9 +1,18 @@
+var webpack = require('webpack');
+
 var config = {
-  entry: "./src/site.js",
+  entry: {
+    site: './src/site.js',
+    detail: './src/pages/detail.js',
+    search: './src/pages/search.js'
+  },
   output: {
-      path: './build',
-      filename: 'site.js'
-  }
+    path: './build',
+    filename: '[name].js'
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({ name: 'site', minChunks: 2 })
+  ]
 };
 
 module.exports = config;
