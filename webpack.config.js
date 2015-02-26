@@ -21,7 +21,13 @@ var config = {
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: 'jsx?harmony' }
+      { test: /\.jsx?$/, loader: 'jsx?harmony' },
+      { test: /\.scss$/, loaders: [
+        'style',
+        'css',
+        'autoprefixer?{browsers:["last 2 version", "> 1%", "ie 8"]}',
+        'sass'
+      ]}
     ]
   }
 };

@@ -15,7 +15,7 @@ webpackJsonp([1],[
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(5);
+	var React = __webpack_require__(8);
 
 	var b = function () {
 	  alert('b.js');
@@ -28,7 +28,7 @@ webpackJsonp([1],[
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(5);
+	var React = __webpack_require__(8);
 
 	var Hello = React.createClass({displayName: "Hello",
 	  render: function () {
