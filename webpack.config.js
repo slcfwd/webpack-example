@@ -12,7 +12,12 @@ var config = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({ name: 'site', minChunks: 2 })
-  ]
+  ],
+  resolve: {
+    alias: {
+      'react': 'react/addons'
+    }
+  }
 };
 
 module.exports = config;
