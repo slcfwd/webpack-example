@@ -21,7 +21,7 @@ var config = {
   },
   module: {
     loaders: [
-      { test: /\.jsx$/, loader: 'jsx?harmony' }
+      { test: /\.jsx?$/, loader: 'jsx?harmony' }
     ]
   }
 };
