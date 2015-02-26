@@ -16,7 +16,8 @@ var config = {
   resolve: {
     alias: {
       'react': 'react/addons'
-    }
+    },
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
