@@ -11,7 +11,8 @@ var config = {
     filename: '[name].js'
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({ name: 'site', minChunks: 2 })
+    new webpack.optimize.CommonsChunkPlugin({ name: 'site', minChunks: 2 }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
   resolve: {
     alias: {
