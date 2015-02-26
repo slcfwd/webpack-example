@@ -17,6 +17,11 @@ var config = {
     alias: {
       'react': 'react/addons'
     }
+  },
+  module: {
+    loaders: [
+      { test: /\.jsx$/, loader: 'jsx?harmony' }
+    ]
   }
 };
 
